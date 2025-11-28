@@ -4,217 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adarsh G - Computer Science Engineer | Full Stack Developer | AI/ML Enthusiast">
-    <meta name="keywords" content="Adarsh G, Software Engineer, Full Stack Developer, MERN Stack, AI, Machine Learning">
-    <meta name="author" content="Adarsh G">
-    <title>Adarsh G | Portfolio</title>
+    <title>Adarsh | Professional Portfolio</title>
+    <meta name="description"
+        content="Professional portfolio of Adarsh, showcasing projects in Machine Learning, Java, and more.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
+
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="nav-brand">ADARSH G</div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Adarsh.</a>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image animate-on-scroll">
-                    <img src="IMG_20250520_184528-removebg-preview.png" alt="Adarsh G">
-                </div>
-                <div class="hero-text">
-                    <h1 class="animate-on-scroll">ADARSH G</h1>
-                    <p class="hero-subtitle animate-on-scroll">Computer Science Engineer</p>
-                    <p class="hero-description animate-on-scroll">
-                        Full Stack Developer | AI/ML Enthusiast | Problem Solver
-                    </p>
-                    <div class="hero-links animate-on-scroll">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
-                    </div>
+    <section id="home" class="hero">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="container hero-container">
+            <div class="hero-image-wrapper fade-in-left">
+                <img src="IMG_20250520_184528-removebg-preview.png" alt="Adarsh" class="hero-image floating">
+                <div class="hero-shape"></div>
+            </div>
+            <div class="hero-content fade-in-right">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name gradient-text">Adarsh</h1>
+                <h2 class="title typing-container">Software Developer & ML Enthusiast</h2>
+                <p class="bio">Building innovative solutions with code. Passionate about Machine Learning, Java
+                    Development, and creating impactful applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary btn-magnetic">View Work</a>
+                    <a href="Adarsh G Resume (1).pdf" target="_blank" class="btn btn-secondary btn-magnetic">Download
+                        Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">About Me</h2>
-                <p class="section-subtitle animate-on-scroll">Get to know me better</p>
-            </div>
-            <div class="about-content">
-                <div class="glass-card animate-on-scroll">
-                    <h3>Personal Information</h3>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <strong>Date of Birth:</strong>
-                            <span>13 April 2002</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Age:</strong>
-                            <span>22 years</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Nationality:</strong>
-                            <span>Indian</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Gender:</strong>
-                            <span>Male</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Location:</strong>
-                            <span>Coimbatore, India</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass-card animate-on-scroll">
-                    <h3>Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Malayalam</span>
-                        <span class="skill-item">Tamil</span>
-                        <span class="skill-item">English</span>
-                        <span class="skill-item">Hindi</span>
-                        <span class="skill-item">French</span>
-                    </div>
-                    <h3 style="margin-top: 1.5rem;">Hobbies</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">⚽ Football</span>
-                        <span class="skill-item">♟️ Chess</span>
-                        <span class="skill-item">🚴 Cycling</span>
-                        <span class="skill-item">🎲 Speed Cubing</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Work Experience</h2>
-                <p class="section-subtitle animate-on-scroll">My professional journey</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2025 - Present</div>
-                        <h3 class="timeline-title">Software Engineer</h3>
-                        <p class="timeline-company">Verizon Data Services India</p>
-                        <p>Working as a full-time Software Engineer, contributing to enterprise-level solutions and data
-                            services.</p>
-                    </div>
-                </div>
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-content">
-                        <div class="timeline-date">February 2024 - June 2024</div>
-                        <h3 class="timeline-title">Software Engineering Intern</h3>
-                        <p class="timeline-company">Verizon Data Services India</p>
-                        <p>Gained hands-on experience with cutting-edge technologies and development practices.</p>
-                        <div class="skills-acquired">
-                            <span class="skill-tag">Apache Flink</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">OracleDB</span>
-                            <span class="skill-tag">Neo4j</span>
-                            <span class="skill-tag">CI/CD</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Education</h2>
-                <p class="section-subtitle animate-on-scroll">Academic background</p>
-            </div>
-            <div class="education-grid">
-                <div class="education-card animate-on-scroll stagger-1">
-                    <h3 class="education-degree">Bachelor of Engineering</h3>
-                    <p class="education-school">PSG College of Technology, Coimbatore</p>
-                    <p class="education-date">November 2020 - July 2024</p>
-                    <div class="education-score">CGPA: 9.34</div>
-                    <p style="margin-top: 1rem; color: var(--color-text-light);">
-                        Major: Computer Science
-                    </p>
-                </div>
-                <div class="education-card animate-on-scroll stagger-2">
-                    <h3 class="education-degree">Higher Secondary (HSC)</h3>
-                    <p class="education-school">Bharathi Matric HR Sec School, Coimbatore</p>
-                    <p class="education-date">June 2019 - March 2020</p>
-                    <div class="education-score">96.6%</div>
-                </div>
-                <div class="education-card animate-on-scroll stagger-3">
-                    <h3 class="education-degree">Secondary School (SSLC)</h3>
-                    <p class="education-school">Bharathi Matric HR Sec School, Coimbatore</p>
-                    <p class="education-date">June 2017 - April 2018</p>
-                    <div class="education-score">94.5%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Technical Skills</h2>
-                <p class="section-subtitle animate-on-scroll">Technologies and expertise</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category animate-on-scroll stagger-1">
-                    <h3>💻 Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Java</span>
-                    </div>
-                </div>
-                <div class="skill-category animate-on-scroll stagger-2">
-                    <h3>🛠️ Tech Stack</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Express.js</span>
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">HTML & CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category animate-on-scroll stagger-3">
-                    <h3>📚 Core Concepts</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">OOP</span>
-                        <span class="skill-item">DBMS</span>
-                        <span class="skill-item">Operating Systems</span>
-                        <span class="skill-item">Computer Networks</span>
-                        <span class="skill-item">Data Structures</span>
-                        <span class="skill-item">Problem Solving</span>
-                        <span class="skill-item">AI & ML</span>
+            <h2 class="section-title fade-in-up">About Me</h2>
+            <div class="about-content fade-in-up">
+                <div class="about-text">
+                    <p>I am a Computer Science graduate from PSG College of Technology with a CGPA of 9.34. Currently
+                        working at Verizon Data Services India, I have a strong foundation in Machine Learning, Java,
+                        and Full Stack Development. I am passionate about building innovative solutions, from AI-driven
+                        detection systems to robust web applications.</p>
+                    <div class="skills-grid">
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">MERN Stack</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Spring Boot</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Machine Learning</div>
+                        <div class="skill-item">Apache Flink</div>
+                        <div class="skill-item">CI/CD</div>
                     </div>
                 </div>
             </div>
@@ -222,171 +94,148 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="section projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Projects</h2>
-                <p class="section-subtitle animate-on-scroll">Featured work and contributions</p>
-            </div>
+            <h2 class="section-title fade-in-up">Featured Projects</h2>
             <div class="projects-grid">
+
                 <!-- Project 1 -->
-                <div class="project-card animate-on-scroll stagger-1">
+                <div class="project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tech">MERN Stack</span>
-                        <h3 class="project-title">Car Rental System</h3>
-                        <p class="project-description">
-                            A comprehensive web application for managing car rentals.
-                        </p>
-                        <ul class="project-features">
-                            <li>User authentication and management</li>
-                            <li>Car rental booking system</li>
-                            <li>Admin panel for CRUD operations</li>
-                            <li>Database integration for persistent storage</li>
-                        </ul>
+                        <h3 class="project-title">Parkinson's Disease Prediction</h3>
+                        <p class="project-desc">Effective prediction of Parkinson's Disease using Machine Learning
+                            algorithms to analyze medical data.</p>
+                        <div class="project-tags">
+                            <span>ML</span>
+                            <span>Python</span>
+                            <span>Data Science</span>
+                        </div>
+                        <a href="https://github.com/Adarsh1342/Effective-Prediction-of-Parkinson-s-Disease-using-ML-.git"
+                            target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card animate-on-scroll stagger-2">
+                <div class="project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tech">Java + SQL</span>
                         <h3 class="project-title">Inventory Management System</h3>
-                        <p class="project-description">
-                            Desktop application for comprehensive inventory control.
-                        </p>
-                        <ul class="project-features">
-                            <li>Product management (add, update, delete)</li>
-                            <li>Stock tracking and management</li>
-                            <li>Customer details and dues management</li>
-                            <li>Receipt printing functionality</li>
-                            <li>User authentication system</li>
-                        </ul>
+                        <p class="project-desc">A robust inventory management system built with Java, featuring stock
+                            tracking and reporting.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Database</span>
+                            <span>Management</span>
+                        </div>
+                        <a href="https://github.com/Adarsh1342/INVENTORY-MANAGEMENT-SYSTEM-I4-IN-JAVA-.git"
+                            target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card animate-on-scroll stagger-3">
+                <div class="project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tech">Python + Streamlit</span>
-                        <h3 class="project-title">Crypto Package</h3>
-                        <p class="project-description">
-                            Cryptography toolkit with web interface for developers.
-                        </p>
-                        <ul class="project-features">
-                            <li>Multiple encryption algorithms support</li>
-                            <li>File upload and encryption/decryption</li>
-                            <li>Steganography using OpenCV and NumPy</li>
-                            <li>Interactive Streamlit web interface</li>
-                            <li>Secure key management</li>
-                        </ul>
+                        <h3 class="project-title">Security Package</h3>
+                        <p class="project-desc">A comprehensive security package for enhanced system protection and
+                            monitoring.</p>
+                        <div class="project-tags">
+                            <span>Security</span>
+                            <span>System</span>
+                        </div>
+                        <a href="https://github.com/Viraj-Agarwal/Security_Package.git" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card animate-on-scroll stagger-4">
+                <div class="project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tech">Deep Learning</span>
-                        <h3 class="project-title">Road Accident Detection</h3>
-                        <p class="project-description">
-                            AI-powered system for automatic accident detection using computer vision.
-                        </p>
-                        <ul class="project-features">
-                            <li>Hybrid YOLOv5h + CNN architecture</li>
-                            <li>Real-time object detection</li>
-                            <li>Published in ICAIS 2024 (Springer)</li>
-                            <li>State-of-the-art classification accuracy</li>
-                        </ul>
+                        <h3 class="project-title">Accident Detection System</h3>
+                        <p class="project-desc">Accident detection and signal regulation system designed to improve road
+                            safety and traffic flow.</p>
+                        <div class="project-tags">
+                            <span>IoT</span>
+                            <span>Automation</span>
+                            <span>Safety</span>
+                        </div>
+                        <a href="https://github.com/Adarsh1342/Accident-Detection-and-Signal-Regulation-System.git"
+                            target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card animate-on-scroll stagger-5">
-                    <div class="project-content">
-                        <span class="project-tech">Machine Learning</span>
-                        <h3 class="project-title">Parkinson's Disease Prediction</h3>
-                        <p class="project-description">
-                            ML model for effective prediction of Parkinson's disease.
-                        </p>
-                        <ul class="project-features">
-                            <li>Ensemble Machine Learning algorithms</li>
-                            <li>Hyperparameter tuning optimization</li>
-                            <li>Feature selection techniques</li>
-                            <li>Built with scikit-learn, NumPy, TensorFlow</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications">
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Publications</h2>
-                <p class="section-subtitle animate-on-scroll">Research contributions</p>
-            </div>
-            <div class="publication-card animate-on-scroll">
-                <h3 class="publication-title">Automatic Road Accident Detection Using Deep Learning</h3>
-                <p class="publication-venue">
-                    4th International Conference on Artificial Intelligence and Smart Energy (ICAIS 2024)
-                </p>
-                <p style="margin-top: 1rem; color: var(--color-text-light);">
-                    Published by Springer. This research presents a novel approach using hybrid YOLOv5h and CNN
-                    algorithms for real-time road accident detection with state-of-the-art accuracy.
-                </p>
+            <h2 class="section-title fade-in-up">Experience & Education</h2>
+            <div class="timeline">
+
+                <!-- Experience 1 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">July 2025 - Present</span>
+                        <h3 class="timeline-role">Full-time Employee</h3>
+                        <h4 class="timeline-org">Verizon Data Services India</h4>
+                        <p class="timeline-desc">Working on enterprise solutions and data services using React and
+                            Spring Boot.</p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2024 - June 2024</span>
+                        <h3 class="timeline-role">Intern</h3>
+                        <h4 class="timeline-org">Verizon Data Services India</h4>
+                        <p class="timeline-desc">Acquired skills in Apache Flink, MongoDB, OracleDB, Neo4jDB, and CI/CD
+                            concepts.</p>
+                    </div>
+                </div>
+
+                <!-- Education 1 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2024</span>
+                        <h3 class="timeline-role">B.E. Computer Science</h3>
+                        <h4 class="timeline-org">PSG College of Technology</h4>
+                        <p class="timeline-desc">CGPA: 9.34</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Get In Touch</h2>
-                <p class="section-subtitle animate-on-scroll">Let's connect and collaborate</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-item animate-on-scroll stagger-1">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-label">Email</div>
-                    <div class="contact-value">adarsh2002off@gmail.com</div>
-                </div>
-                <div class="contact-item animate-on-scroll stagger-2">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-label">Phone</div>
-                    <div class="contact-value">+91 7548835341</div>
-                </div>
-                <div class="contact-item animate-on-scroll stagger-3">
-                    <div class="contact-icon">💻</div>
-                    <div class="contact-label">GitHub</div>
-                    <div class="contact-value">
-                        <a href="https://github.com/Adarsh1342" target="_blank" style="color: var(--color-primary);">
-                            github.com/Adarsh1342
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-item animate-on-scroll stagger-4">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-label">Location</div>
-                    <div class="contact-value">
-                        Site No:14, Sowbagya Avenue,<br>
-                        Annamanaiker Street, Kuniamuthur,<br>
-                        Coimbatore - 641008, India
-                    </div>
+            <h2 class="section-title fade-in-up">Get In Touch</h2>
+            <div class="contact-content fade-in-up">
+                <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try
+                    my best to get back to you!</p>
+                <a href="mailto:adarsh2002off@gmail.com" class="btn btn-primary">Say Hello</a>
+
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Adarsh G. All rights reserved.</p>
+            <p>&copy; 2025 Adarsh. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 
