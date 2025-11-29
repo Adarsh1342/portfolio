@@ -6,7 +6,7 @@ const nextConfig = {
     },
     reactStrictMode: true,
     output: 'export', // Required for Static HTML Export (GitHub Pages)
-    basePath: '', // <--- Add this line!
+    basePath: '/portfolio', // <--- Add this line!
 }
 
 module.exports = nextConfig
