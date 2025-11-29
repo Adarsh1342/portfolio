@@ -6,11 +6,19 @@ import { ExternalLink, Github } from 'lucide-react'
 export default function Projects() {
     const projects = [
         {
+            title: 'XO-alphabeta',
+            description: 'A simple react based UI game using alpha beta pruning and depth parameterization',
+            tech: ['React', 'Alpha-Beta Pruning', 'Game AI'],
+            github: 'https://github.com/Adarsh1342/XO-alphabeta.git',
+            demo: 'https://adarsh1342.github.io/XO-alphabeta/',
+            color: 'sage',
+        },
+        {
             title: 'Effective Prediction of Parkinson\'s Disease',
             description: 'Developed an Ensemble Machine Learning Algorithm with Hyperparameter Tuning and Feature Selection using Python, scikit-learn, numpy, and tensorflow.',
             tech: ['Python', 'Machine Learning', 'scikit-learn', 'TensorFlow', 'numpy'],
             github: 'https://github.com/Adarsh1342/Effective-Prediction-of-Parkinson-s-Disease-using-ML-.git',
-            color: 'sage',
+            color: 'beige',
         },
         {
             title: 'Inventory Management System',
@@ -99,18 +107,30 @@ export default function Projects() {
                                 </div>
                             </div>
 
-                            {project.github && (
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn-hover inline-flex items-center gap-2 px-4 py-2 bg-sage-600 hover:bg-sage-700 text-white rounded-lg text-sm font-semibold transition-all w-full justify-center"
-                                >
-                                    <Github size={18} />
-                                    View on GitHub
-                                    <ExternalLink size={16} />
-                                </a>
-                            )}
+                            <div className="flex gap-2">
+                                {project.github && (
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-hover inline-flex items-center gap-2 px-4 py-2 bg-sage-600 hover:bg-sage-700 text-white rounded-lg text-sm font-semibold transition-all flex-1 justify-center"
+                                    >
+                                        <Github size={18} />
+                                        GitHub
+                                    </a>
+                                )}
+                                {project.demo && (
+                                    <a
+                                        href={project.demo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-hover inline-flex items-center gap-2 px-4 py-2 bg-coral-600 hover:bg-coral-700 text-white rounded-lg text-sm font-semibold transition-all flex-1 justify-center"
+                                    >
+                                        <ExternalLink size={18} />
+                                        Demo
+                                    </a>
+                                )}
+                            </div>
                         </motion.div>
                     ))}
                 </div>
