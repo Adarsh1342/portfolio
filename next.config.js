@@ -5,6 +5,8 @@ const nextConfig = {
         unoptimized: false,
     },
     reactStrictMode: true,
+    output: 'export', // Required for Static HTML Export (GitHub Pages)
+    basePath: '', // <--- Add this line!
 }
 
 module.exports = nextConfig
