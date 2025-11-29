@@ -1,23 +1,23 @@
 // next.config.js
 
-const isProd = process.env.NODE_ENV === 'production'
-const repoName = 'portfolio' // Replace 'portfolio' with your actual repository name if different
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // 1. Explicitly set properties required for static export
+    // 1. CRITICAL: Enables static export mode
     output: 'export',
-    reactStrictMode: true,
 
-    // 2. Conditionally set basePath/assetPrefix/unoptimized only if not running through the Action.
-    //    We explicitly set it here to cover any local build scenario, but the Action will overwrite/correct it.
-    //    Crucially, we MUST ensure images are unoptimized if the action is not run.
-    basePath: isProd ? `/${repoName}` : undefined,
-    assetPrefix: isProd ? `/${repoName}/` : undefined,
+    // 2. CRITICAL: Sets the base path for pages and internal links (MUST start with /)
+    basePath: '/portfolio',
+
+    // 3. CRITICAL: Sets the prefix for static assets like /_next/static/
+    assetPrefix: '/portfolio/',
+
     images: {
-        unoptimized: true, // Set to true here to avoid the optimization error during build
-        domains: [],
+        // 4. CRITICAL: Disables the Next.js Image Optimization API
+        unoptimized: true,
+        domains: [], // Keep this empty if not using external images
     },
+
+    reactStrictMode: true,
 }
 
 module.exports = nextConfig
