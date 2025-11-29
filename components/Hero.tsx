@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, Download, Mail } from 'lucide-react'
 import Image from 'next/image'
+import { withBasePath } from '@/lib/utils'
 
 export default function Hero() {
     return (
@@ -48,7 +49,7 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-br from-sage-500 to-coral-500 rounded-full blur-2xl opacity-30 animate-pulse" />
                             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-sage-500/50 shadow-2xl">
                                 <Image
-                                    src="/profile.png"
+                                    src={withBasePath("/profile.png")}
                                     alt="Adarsh G"
                                     fill
                                     className="object-cover"
