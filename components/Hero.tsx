@@ -102,7 +102,7 @@ export default function Hero() {
                                 Get In Touch
                             </a>
                             <a
-                                href="/resume.pdf"
+                                href={withBasePath("/resume.pdf")}
                                 download
                                 className="btn-hover px-8 py-3 glass text-white rounded-lg font-semibold flex items-center gap-2 transition-all hover:bg-white/10"
                             >
