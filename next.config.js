@@ -4,6 +4,7 @@ const nextConfig = {
         domains: [],
         unoptimized: false,
     },
+    assetPrefix: '/portfolio',
     reactStrictMode: true,
     output: 'export', // Required for Static HTML Export (GitHub Pages)
     basePath: '/portfolio', // <--- Add this line!
