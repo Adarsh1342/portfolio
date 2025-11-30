@@ -1,20 +1,21 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { withBasePath } from '@/lib/utils'
 
 const inter = Inter({
     subsets: ['latin'],
     variable: '--font-inter',
 })
-
+const iconurl = withBasePath("/icon.png");
 export const metadata: Metadata = {
     title: 'Adarsh G - Portfolio',
     description: 'Professional portfolio of Adarsh G - Computer Science Engineer specializing in Full Stack Development, Machine Learning, and Deep Learning',
     keywords: ['Adarsh G', 'Portfolio', 'Computer Science', 'Full Stack Developer', 'Machine Learning', 'Deep Learning', 'Verizon'],
     authors: [{ name: 'Adarsh G' }],
     icons: {
-        icon: '/icon.png',
-        apple: '/icon.png',
+        icon: iconurl,
+        apple: iconurl,
     },
     openGraph: {
         title: 'Adarsh G - Portfolio',
